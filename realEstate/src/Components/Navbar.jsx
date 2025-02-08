@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import Logo from "../assets/logo.svg";
+import CrossICon from "../assets/cross_icon.svg";
+import MenuIcon from "../assets/menu_icon.svg";
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -15,7 +18,7 @@ const Navbar = () => {
   return (
     <div className="absolute top-0 left-0 w-full z-10">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent">
-        <img src="/logo.svg" alt="Profile"></img>
+        <img src={Logo} alt="Profile"></img>
         <ul className="hidden md:flex gap-7 text-white">
           <a href="#Header" className="cursor-pointer hover:text-gray-400">
             Home
@@ -35,7 +38,7 @@ const Navbar = () => {
         </button>
         <img
           onClick={() => setShowMobileMenu(true)}
-          src="/menu_icon.svg"
+          src={MenuIcon}
           className="md:hidden w-7 cursor-pointer"></img>
       </div>
       {/* Mobile Menu */}
@@ -47,7 +50,7 @@ const Navbar = () => {
           <img
             onClick={() => setShowMobileMenu(false)}
             className="w-6"
-            src="/cross_icon.svg"></img>
+            src={CrossICon}></img>
         </div>
         <ul className="flex flex-col items-center gap-2 mt-5 mx-5 text-lg font-medium  ">
           <a
