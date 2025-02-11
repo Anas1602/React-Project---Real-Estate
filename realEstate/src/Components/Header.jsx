@@ -16,7 +16,9 @@ const Header = () => {
           <a className="border border-white px-8 py-3 rounded" href="#Projects">
             Projects
           </a>
-          <a className="bg-blue-500 px-8 py-3 rounded" href="#Contact">
+          <a
+            className="bg-blue-500 px-8 py-3 rounded cursor-pointer hover:bg-blue-600"
+            href="#Contact">
             Contact us
           </a>
         </div>

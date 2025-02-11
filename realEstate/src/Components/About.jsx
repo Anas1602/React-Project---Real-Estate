@@ -43,7 +43,7 @@ const About = () => {
             voluptas. Debitis voluptatem ex, aliquid itaque quidem nobis quas
             fuga ad?
           </p>
-          <button className="bg-blue-600 text-white px-8 py-2 rounded">
+          <button className="bg-blue-600 text-white px-8 py-2 rounded cursor-pointer hover:bg-blue-700">
             Learn More
           </button>
         </div>

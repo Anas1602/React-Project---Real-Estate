@@ -41,7 +41,9 @@ const Projects = () => {
   const slideWidth = 100 / slidesToShow;
 
   return (
-    <div className="container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-20 w-full overflow-hidden">
+    <div
+      id="Projects"
+      className="container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-20 w-full overflow-hidden">
       <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center">
         Projects{" "}
         <span className="underline underline-offset-4 decoration-1 under font-light">
